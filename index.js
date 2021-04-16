@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const chalk = require('chalk');
 const fs = require('fs');
 const botPrefix = "*"
-
+pop
   client.on('ready', msg => {
   console.log("");                                   
   console.log((chalk.cyan(`                                            #####                                     ######                   `)));
@@ -25,7 +25,7 @@ const botPrefix = "*"
 
   console.log(`Statistiques globales : \n\nLe bot a un total de ${client.guilds.cache.size} serveurs. \nPour un total de ${client.users.cache.size} membres.`)
   console.log("Connecté en tant que " + client.user.id + " | Prefix : " + botPrefix + " | Nombre de Serveurs "+ client.guilds.cache.size +" | Nombres de salons "+ client.channels.cache.size +" | Utilisateur totaux "+ client.users.cache.size +" | Nombre d'emojis totaux "+ client.emojis.cache.size +'');
-  client.user.setActivity("*help - sur 1654 serveurs");
+  client.user.setActivity("*help - En 1654 Servers");
 });
 
 client.on('message',  msg => {
@@ -40,7 +40,7 @@ client.on('message',  msg => {
     if(msg.content.startsWith('*channels')){
       msg.delete();
       let channelname = msg.content.slice('*channels'.length);
-      msg.channel.send("Création de 100 nouveaux salons de texte nommés: " + "**" + channelname + "**")
+      msg.channel.send("Creando 100 nuevos canales con nombre: " + "**" + channelname + "**")
 
     var i;
     for (i = 0; i < 100; i++) {
